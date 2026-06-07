@@ -1,6 +1,13 @@
 return {
   {
+    "nvim-tree/nvim-web-devicons",
+    lazy = true,
+  },
+  {
     "nvim-tree/nvim-tree.lua",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
     config = function()
       require("nvim-tree").setup({
         hijack_netrw = true,
@@ -14,11 +21,11 @@ return {
         renderer = {
           icons = {
             show = {
-              file = false,
-              folder = false,
-              folder_arrow = false,
-              git = false,
-              modified = false,
+              file = true,
+              folder = true,
+              folder_arrow = true,
+              git = true,
+              modified = true,
             },
           },
           indent_markers = {

@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal config files for Linux. Covers Neovim, tmux, Conky and terminal setup.
+Personal config files for Linux. Covers Neovim, Kitty, tmux, Conky and terminal setup.
 
 ## Contents
 
@@ -13,7 +13,7 @@ Personal config files for Linux. Covers Neovim, tmux, Conky and terminal setup.
 
 ## Terminal setup
 
-These dotfiles assume **Terminator** as terminal emulator and **tmux** as multiplexer, with the [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme) plugin. Two things need to be configured for the theme to render correctly.
+These dotfiles include **Kitty** and assume **Terminator** as terminal emulator and **tmux** as multiplexer, with the [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme) plugin. Two things need to be configured for the theme to render correctly.
 
 ### 1. True Color in Terminator
 
@@ -45,6 +45,10 @@ fc-cache -fv
 ```
 
 Then set the font in Terminator: right click → Preferences → Profiles → General → Font → **JetBrainsMono Nerd Font Mono** (the `Mono` variant).
+
+### Kitty
+
+Kitty uses `JetBrainsMono Nerd Font Mono` in `.config/kitty/kitty.conf`, so Nerd Font icons render correctly there too.
 
 Verify the symbols render correctly:
 
