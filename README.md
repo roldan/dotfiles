@@ -13,27 +13,7 @@ Personal config files for Linux. Covers Neovim, Kitty, tmux, Conky and terminal 
 
 ## Terminal setup
 
-These dotfiles include **Kitty** and assume **Terminator** as terminal emulator and **tmux** as multiplexer, with the [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme) plugin. Two things need to be configured for the theme to render correctly.
-
-### 1. True Color in Terminator
-
-Terminator doesn't enable true color by default. Edit `~/.config/terminator/config` and add the `environment` line inside `[[default]]`:
-
-```ini
-[profiles]
-  [[default]]
-    environment = COLORTERM=truecolor
-```
-
-Restart Terminator and verify with:
-
-```bash
-echo $COLORTERM   # should print: truecolor
-```
-
-### 2. Nerd Fonts
-
-The theme uses Powerline/Nerd Font symbols for the status bar separators. Without the right font they render as garbage characters.
+These dotfiles include **Kitty** and **tmux** with the [tmux-onedark-theme](https://github.com/odedlaz/tmux-onedark-theme) plugin. Kitty uses a Nerd Font so the status bar symbols render correctly.
 
 Install JetBrainsMono Nerd Font:
 
@@ -44,11 +24,7 @@ unzip JetBrainsMono.zip -d ~/.local/share/fonts/JetBrainsMono
 fc-cache -fv
 ```
 
-Then set the font in Terminator: right click → Preferences → Profiles → General → Font → **JetBrainsMono Nerd Font Mono** (the `Mono` variant).
-
-### Kitty
-
-Kitty uses `JetBrainsMono Nerd Font Mono` in `.config/kitty/kitty.conf`, so Nerd Font icons render correctly there too.
+Kitty is configured to use `JetBrainsMono Nerd Font Mono` in `.config/kitty/kitty.conf`.
 
 Verify the symbols render correctly:
 
