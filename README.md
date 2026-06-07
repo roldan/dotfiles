@@ -7,6 +7,7 @@ Personal config files for Linux. Covers Neovim, tmux, Conky and terminal setup.
 | File/Dir | Description |
 |---|---|
 | `.config/nvim/` | Neovim configuration (Lua) |
+| `.config/kitty/` | Kitty terminal config |
 | `.tmux.conf` | tmux config with TPM and onedark theme |
 | `.conkyrc` | Conky system monitor config |
 
