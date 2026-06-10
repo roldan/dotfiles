@@ -22,5 +22,6 @@ opt.splitright = true
 opt.splitbelow = true
 opt.updatetime = 250
 opt.timeoutlen = 400
+opt.completeopt = { "menu", "menuone", "noselect" }
 opt.swapfile = false
 opt.backup = false
